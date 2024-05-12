@@ -1,0 +1,6 @@
+{
+  "start": "ws",
+  "devDependencies": {
+    "local-web-server": "^5.3.3"
+  }
+}
