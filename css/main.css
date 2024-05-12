@@ -32,7 +32,9 @@ input:active, textarea:active {outline:none;}
 a:hover {
   color:#6750a4;
 }
-
+article {
+  padding: 20px;
+}
 h1, h2, h3 {
   padding: 0px;
   margin:0px;

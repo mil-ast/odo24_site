@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="ru">
-<head>{{ template "head.html" . }}</head>
+  <head>
+    <meta charset="utf-8">
+    <title>ODO24 Сервисная книжка автомобиля Online</title>
+    <base href="/">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=no">
+    <meta name="description" content="{{.description}}" />
+    <meta name="theme-color" content="#db805c" />
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+  </head>
 <body>
 	<header>
     <div id="logo">
@@ -8,20 +19,6 @@
         <span>ODO24</span><span class="orange">.ru</span>
       </a>
     </div>
-    <nav>
-      <a href="/book/profile/login">
-        <i class="material-icons">account_circle</i>
-        <span>Авторизация</span>
-      </a>
-      <a href="/screenshots.html">
-        <i class="material-icons">image</i>
-        <span>Скриншоты</span>
-      </a>
-      <a href="/about.html">
-        <i class="material-icons">info</i>
-        <span>О проекте</span>
-      </a>
-    </nav>
   </header>
 	<article>
 		<h1>Политика конфиденциальности персональных данных</h1>
@@ -33,7 +30,6 @@
 	<article>
 		<h2>1. Определение терминов</h2>
 		<p><strong>1.1 В настоящей Политике конфиденциальности используются следующие термины:</strong></p>
-
 		<p>1.1.1. &quot;<strong>Администрация сайта</strong>&quot; (далее &mdash; Администрация) &mdash; уполномоченные сотрудники
 			на управление сайтом <strong>ODO24.ru</strong>,
 			которые организуют и (или) осуществляют обработку персональных данных, а также определяет цели обработки
@@ -276,6 +272,31 @@
 
 		<p>Обновлено: 12 Мая 2019 года</p>
 	</article>
-	{{ template "footer.html" }}
+	<footer>
+		<div>
+			<div class="column">
+				<p>
+					<a id="feedback" href="https://forms.yandex.ru/u/663fb9c8d046885f743b3ad2/" target="_blank">Форма обратной связи</a>
+				</p>
+				<p>
+					<a href="/confidential.html" target="_blank">Политика конфиденциальности</a>
+				</p>
+			</div>
+		</div>
+		<div id="icons">
+			<div>
+				<div class="icon">
+					<i id="github"></i>
+					<a href="https://github.com/mil-ast/odo24_mobile" target="_blank">Github</a>
+				</div>
+			</div>
+			<div>
+				<div class="icon">
+					<i id="flutter"></i>
+					<a href="https://flutter.dev/" target="_blank">Flutter</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
