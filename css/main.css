@@ -9,7 +9,7 @@ html,body {
 }
 body {
   max-width: 1440px;
-  margin: 40px auto;
+  margin: 40px auto 0px auto;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
   background-color: #fff;
   color:#333;
@@ -33,7 +33,7 @@ a:hover {
   color:#6750a4;
 }
 article {
-  padding: 20px;
+  padding: 20px 0px;
 }
 h1, h2, h3 {
   padding: 0px;
@@ -80,22 +80,22 @@ body header img {
   border-radius: 10px;
 }
 
-#actions {
+.actions {
   display: grid;
   gap:20px;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: 270px 270px;
 }
-#actions .button {
+.actions .button {
   position: relative;
   padding: 14px 60px 10px 30px;
   background-color: #6750a4;
   color:#fff;
   border-radius: 16px;
 }
-#actions .button:hover {
+.actions .button:hover {
   background-color: #725cb1;
 }
-#actions .button::after {
+.actions .button::after {
   content: "";
   position: absolute;
   background-size: cover;
@@ -103,7 +103,7 @@ body header img {
   background-repeat: no-repeat;
 }
 
-#actions #apk:after {
+.actions #apk:after {
   top: 4px;
   right: 16px;
   width: 32px;
@@ -111,12 +111,34 @@ body header img {
   background-image: url("/icons/android.svg");
 }
 
-#actions #web_mobile::after {
+.actions #web_mobile::after {
   top: 10px;
   right: 20px;
   width: 26px;
   height: 26px;
   background-image: url("/icons/open_new.svg");
+}
+
+#markets {
+  margin-top: 50px;
+}
+
+#markets a {
+  display: inline-block;
+  background-size: contain;
+  border-radius: 16px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#markets #rumarket {
+  background-image: url("/icons/rumarket.svg");
+  border: 1px #eee solid;
+}
+
+#markets #nashstor {
+  background-image: url("/icons/nashstor.svg");
 }
 
 footer {
@@ -182,11 +204,15 @@ footer #feedback:after {
 
 
 @media (max-width: 1024px) {
-  #actions {
-    grid-template-columns: max-content;
+  .actions {
+    grid-template-columns: 280px;
   }
   header {
     padding: 40px;
+  }
+
+  #markets {
+    margin-top: 35px;
   }
 }
 
@@ -206,6 +232,9 @@ footer #feedback:after {
 }
 
 @media (max-width: 540px) {
+  ul {
+    padding: 0px 18px;
+  }
   footer {
     display:block;
   }
@@ -217,5 +246,13 @@ footer #feedback:after {
   }
   body header img {
     width: 280px;
+  }
+
+  .actions {
+    grid-template-columns: 1fr;
+  }
+
+  #markets a {
+    width: 100%;
   }
 }
