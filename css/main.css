@@ -130,15 +130,25 @@ body header img {
   height: 65px;
   background-repeat: no-repeat;
   background-position: center;
+  border: 1px #eee solid;
+}
+
+#markets a:hover {
+  background-color: #f3f3f3;
 }
 
 #markets #rumarket {
   background-image: url("/icons/rumarket.svg");
-  border: 1px #eee solid;
 }
 
 #markets #nashstor {
   background-image: url("/icons/nashstor.svg");
+  background-size: 90%;
+}
+
+#markets #rustore {
+  background-image: url("/icons/rustore.svg");
+  background-size: 65%;
 }
 
 footer {
