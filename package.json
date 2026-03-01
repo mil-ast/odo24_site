@@ -1,6 +1,8 @@
 {
-  "start": "ws",
+  "scripts": {
+    "start": "ws -p 8080"
+  },
   "devDependencies": {
-    "local-web-server": "^5.3.3"
+    "local-web-server": "^5.4.0"
   }
 }
